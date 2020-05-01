@@ -24,18 +24,17 @@
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
 
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="../../assets/javascript/materialize.js"></script>
-  <script type="text/javascript">
-     $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-  </script>
-  <main>
+  <main class="container">
     <%= yield %>
   </main>
 
   <%= render "layouts/footer" %>
+    <link href="../../assets/stylesheet/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../../assets/stylesheet/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../../assets/javascript/materialize.js"></script>
+  <script src="../../assets/javascript/init.js"></script>
+  </script>
 
   </body>
 </html>
